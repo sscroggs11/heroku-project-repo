@@ -1,0 +1,35 @@
+<div class='max-w-7xl mx-auto px-4 py-6 sm:px-6 flex items-center'>
+
+  <nav
+    class='flex md:flex-row md:w-1/2 w-full items-center justify-between md:h-1/2'
+  >
+    <div>
+      <a href='/' class='flex flex-row items-center'>
+        <img
+          class='h-10 w-auto mr-2'
+          src='/img/vision.png'
+          alt='vision by freepik'
+        />
+        <span class='text-white text-3xl font-bold'>ViewNFT</span>
+      </a>
+    </div>
+
+    <div>
+      {{#if loggedIn}}
+        <button
+          id='logout'
+          @click='logout'
+          class='text-purple-600 hover:text-purple-700 underline'
+        >Logout</button>
+      {{else}}
+        <a
+          href='/login'
+          class='text-purple-600 hover:text-purple-700 underline'
+        >
+          Login</a>
+      {{/if}}
+    </div>
+
+  </nav>
+
+</div>
